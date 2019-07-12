@@ -1,7 +1,7 @@
 # Личный проект «Пинк» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Наталия Степанец](https://up.htmlacademy.ru/adaptive/17/user/549683).
-* Наставник: `Неизвестно`.
+* Наставник: Влад Башилов (https://htmlacademy.ru/profile/id167603).
 
 ---
 
