@@ -3,11 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Pink</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header">
-      <a class="page-header__logo" href="#">
-        <img class="page-header__logo-text" src="http://placehold.it/150x100" width="75" height="22" alt="Логотип Pink">
+    <header class="page-header container">
+      <a class="page-header__logo" href="index.html">
+        <img class="page-header__logo-text" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">Открыть меню</button>
@@ -29,8 +32,9 @@
         </div>
       </nav>
     </header>
-    <main class="page-main">
-      <h1 class="visually-hidden">Pink - расскрась серые будни в розовые тона</h1>
+    <main class="page-main container">
+      <h1 class="visually-hidden">Взгляните на жизнь иначе!</h1>
+      <img src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="Айфон в руке">
       <section class="download">
         <div class="download__wrapper">
           <h2 class="visually-hidden">Скачать приложение</h2>
@@ -38,17 +42,17 @@
           <ul class="download__list">
             <li class="download__item">
               <a href="https://www.apple.com/ru/itunes/">
-                <img src="http://placehold.it/150x100" width="47" height="56" alt="IOS">
+                <img src="img/logo-apple.svg" width="47" height="56" alt="Apple">
               </a>
             </li>
             <li class="download__item">
               <a href="https://play.google.com/store">
-                <img src="http://placehold.it/150x100" width="43" height="47" alt="Android">
+                <img src="img/logo-android.svg" width="43" height="47" alt="Android">
               </a>
             </li>
             <li class="download__item">
               <a href="https://www.microsoft.com/ru-ru/store/b/home">
-                <img src="http://placehold.it/150x100" width="44" height="41" alt="Windows">
+                <img src="img/logo-microsoft.svg" width="44" height="41" alt="Microsoft">
               </a>
             </li>
           </ul>
@@ -62,20 +66,20 @@
           <ul class="features__list">
             <li class="features__item">
               <h4 class="features__item-title">Поднимает настроение</h4>
-              <p class="features__description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+              <p class="features__item-description">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
             </li>
             <li class="features__item">
               <h4 class="features__item-title">Меняет мир вокруг</h4>
-              <p class="features__description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <p class="features__item-description">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
             </li>
             <li class="features__item">
               <h4 class="features__item-title">Заводит новых друзей</h4>
-              <p class="features__description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+              <p class="features__item-description">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
         </div>
         <div class="features__image">
-          <img src="http://placehold.it/150x100" width="157" height="320" alt="Приложение на iPhone">
+          <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Изображение приложения на iPhone">
         </div>
       </section>
       <section class="reviews">
@@ -83,7 +87,7 @@
           <h2 class="visually-hidden">Отзывы о приложении</h2>
           <div class="reviews__list slider__list">
             <blockquote class="reviews_item slider__item">
-              <cite class="reviews__author-name">Николай Петров</cite>
+              <cite class="reviews__author">Николай Петров</cite>
               <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»
               </p>
             </blockquote>
@@ -97,24 +101,32 @@
           </p>
         </div>
       </section>
-      <section class="price">
-        <div class="price__wrapper slider">
+      <section class="tariffs">
+        <div class="tariffs__wrapper slider">
           <h2 class="visually-hidden">Прайс-лист</h2>
-          <table class="price__list slider__list">
+          <table class="tariffs__list slider__list">
             <tr>
-              <th class="price__caption">Стандарт 3,99 USD</th>
+              <td class="tariffs__caption"></td>
+              <th class="tariffs__caption">Стандарт <span class="tariffs__caption-price">3,99 USD<span></th>
+              <td class="tariffs__caption"></td>
             </tr>
             <tr>
-              <td class="price__function">Розовый фильтр</td>
+              <td class="tariffs__function"></td>
+              <td class="tariffs__function">Розовый фильтр</td>
+              <td class="tariffs__function"></td>
             </tr>
             <tr>
-              <td class="price__function">Смайлики</td>
+              <td class="tariffs__function"></td>
+              <td class="tariffs__function">Смайлики</td>
+              <td class="tariffs__function"></td>
             </tr>
             <tr>
-              <td class="price__function">Комментарии</td>
+              <td class="tariffs__function"></td>
+              <td class="tariffs__function">Комментарии</td>
+              <td class="tariffs__function"></td>
             </tr>
           </table>
-          <p class="price__toggles slider__toggles">
+          <p class="tariffs__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
             <button class="slider__toggle" type="button">3</button>
@@ -122,23 +134,26 @@
         </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <section class="page-footer__contacts contacts">
         <b class="contacts__title">Остались вопросы? Свяжитесь с нами!</b>
         <div class="contacts__info">
           <p class="contacts__text">
-            <strong>Звоните:</strong> +7 (812) 555-66-66
+            <strong>Звоните:</strong>
+            <p class="contacts__text-phone">+7 (812) 555-66-66</p>
           </p>
           <p class="contacts__text">
-            <strong>Пишите:</strong> mail@htmlacademy.ru
+            <strong>Пишите:</strong>
+            <p class="contacts__text-mail">mail@htmlacademy.ru</p>
           </p>
           <p class="contacts__text">
-            <strong>Приезжайте в гости:</strong> ул. Большая Конюшенная, 19/8
+            <strong>Приезжайте в гости:</strong>
+            <p class="contacts__text-adress">ул. Большая Конюшенная, 19/8</p>
           </p>
         </div>
       </section>
       <section class="page-footer__map map">
-        <img src="http://placehold.it/150x100" alt="Наше местоположение">
+        <img src="img/bg-map-mobile@1x.png" alt="Наше местоположение">
       </section>
     </footer>
   </body>
