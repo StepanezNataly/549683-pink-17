@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <title>Pink</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -104,28 +103,28 @@
       <section class="tariffs">
         <div class="tariffs__wrapper slider">
           <h2 class="visually-hidden">Прайс-лист</h2>
-          <table class="tariffs__list slider__list">
-            <tr>
-              <td class="tariffs__caption"></td>
-              <th class="tariffs__caption">Стандарт <span class="tariffs__caption-price">3,99 USD<span></th>
-              <td class="tariffs__caption"></td>
-            </tr>
-            <tr>
-              <td class="tariffs__function"></td>
-              <td class="tariffs__function">Розовый фильтр</td>
-              <td class="tariffs__function"></td>
-            </tr>
-            <tr>
-              <td class="tariffs__function"></td>
-              <td class="tariffs__function">Смайлики</td>
-              <td class="tariffs__function"></td>
-            </tr>
-            <tr>
-              <td class="tariffs__function"></td>
-              <td class="tariffs__function">Комментарии</td>
-              <td class="tariffs__function"></td>
-            </tr>
-          </table>
+          <div class="tariffs__list slider__list">
+            <div class="tariffs__caption">
+              <div class="tariffs__caption-info"></div>
+              <div class="tariffs__caption-info">Стандарт<span class="tariffs__caption-price">3,99 USD<span></div>
+              <div class="tariffs__caption-info"></div>
+            </div>
+            <div class="tariffs__function">
+              <div class="tariffs__function-info"></div>
+              <div class="tariffs__function-info">Розовый фильтр</div>
+              <div class="tariffs__function-info"></div>
+            </div>
+            <div class="tariffs__function">
+              <div class="tariffs__function-info"></div>
+              <div class="tariffs__function-info">Смайлики</div>
+              <div class="tariffs__function-info"></div>
+            </div>
+            <div class="tariffs__function">
+              <div class="tariffs__function-info"></div>
+              <div class="tariffs__function-info">Комментарии</div>
+              <div class="tariffs__function-info"></div>
+            </div>
+          </div>
           <p class="tariffs__toggles slider__toggles">
             <button class="slider__toggle" type="button">1</button>
             <button class="slider__toggle" type="button">2</button>
@@ -139,15 +138,15 @@
         <b class="contacts__title">Остались вопросы? Свяжитесь с нами!</b>
         <div class="contacts__info">
           <p class="contacts__text">
-            <strong>Звоните:</strong>
+            <span class="contacts__text-action">Звоните:</span>
             <p class="contacts__text-phone">+7 (812) 555-66-66</p>
           </p>
           <p class="contacts__text">
-            <strong>Пишите:</strong>
+            <span class="contacts__text-action">Пишите:</span>
             <p class="contacts__text-mail">mail@htmlacademy.ru</p>
           </p>
           <p class="contacts__text">
-            <strong>Приезжайте в гости:</strong>
+            <span class="contacts__text-action">Приезжайте в гости:</span>
             <p class="contacts__text-adress">ул. Большая Конюшенная, 19/8</p>
           </p>
         </div>
