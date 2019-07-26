@@ -1,31 +1,3 @@
-body {
-  background-color: @bg-light;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% 0;
-  background-size: 320px auto;
-  min-width: 320px;
-  margin: 0;
-  padding: 0;
-  font-family: "Open Sans", "Arial", sans-serif;
-  font-size: @base-size;
-  line-height: 24px;
-  font-weight: 300;
-  font-style: normal;
-  color: @base-color;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-.container {
-  width: 320px;
-  margin: 0 auto;
-  padding: 0;
-}
-
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
@@ -39,4 +11,63 @@ input[type="radio"].visually-hidden {
   clip-path: inset(100%);
   overflow: hidden;
   clip: rect(0 0 0 0);
+}
+
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", "Arial", sans-serif;
+  font-size: @base-size;
+  line-height: 24px;
+  font-weight: 300;
+  font-style: normal;
+  color: @base-color;
+  background-color: @bg-light;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 50% 258px;
+  background-size: auto 462px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+@media (min-width: 660px) {
+  body {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50% 255px;
+    background-size: 660px 729px;
+  }
+
+  .container {
+    min-width: 660px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
+
+@media (min-width: 1200px) {
+  body {
+    min-width: 1200px;
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: auto 853px;
+  }
+
+  .container {
+    min-width: 1200px;
+    margin: 0 auto;
+    padding: 0;
+  }
 }

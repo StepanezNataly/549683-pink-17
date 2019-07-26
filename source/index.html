@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Pink</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -33,7 +34,9 @@
     </header>
     <main class="page-main container">
       <h1 class="visually-hidden">Взгляните на жизнь иначе!</h1>
-      <img src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="Айфон в руке">
+      <div class="page-main__image">
+        <img src="img/iphone-hand-mobile@1x.png" width="320" height="314" alt="Айфон в руке">
+      </div>
       <section class="download">
         <div class="download__wrapper">
           <h2 class="visually-hidden">Скачать приложение</h2>
@@ -137,18 +140,18 @@
       <section class="page-footer__contacts contacts">
         <b class="contacts__title">Остались вопросы? Свяжитесь с нами!</b>
         <div class="contacts__info">
-          <p class="contacts__text">
-            <span class="contacts__text-action">Звоните:</span>
+          <div class="contacts__text">
+            <p class="contacts__text-action">Звоните:</p>
             <p class="contacts__text-phone">+7 (812) 555-66-66</p>
-          </p>
-          <p class="contacts__text">
-            <span class="contacts__text-action">Пишите:</span>
+          </div>
+          <div class="contacts__text">
+            <p class="contacts__text-action">Пишите:</p>
             <p class="contacts__text-mail">mail@htmlacademy.ru</p>
-          </p>
-          <p class="contacts__text">
-            <span class="contacts__text-action">Приезжайте в гости:</span>
+          </div>
+          <div class="contacts__text">
+            <p class="contacts__text-action">Приезжайте в гости:</p>
             <p class="contacts__text-adress">ул. Большая Конюшенная, 19/8</p>
-          </p>
+          </div>
         </div>
       </section>
       <section class="page-footer__map map">
