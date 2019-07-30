@@ -26,6 +26,7 @@
 
 @media (min-width: 660px) {
   .features {
+    padding: 0;
     background-color: @bg-light;
   }
 
@@ -33,6 +34,20 @@
     font-size: 40px;
     line-height: 40px;
     padding-bottom: 20px;
+  }
+
+  .features__wrapper {
+    background-color: @bg-color-grey;
+    display: flex;
+  }
+
+  .features__list {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 310px;
+    order: 2;
+    margin-left: 40px;
   }
 }
 
@@ -42,7 +57,15 @@
     line-height: 50px;
   }
 
+  .features__wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+    min-height: 617px;
+  }
+
   .features__list {
-    display: flex;
+    flex-direction: row;
+    text-align: center;
+    width: 240px;
   }
 }
