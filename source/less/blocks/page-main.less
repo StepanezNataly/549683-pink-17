@@ -1,86 +1,119 @@
 .page-main__wrapper {
   background-color: #000000;
-  background-image: url("../img/bg-back-mobile@1x.jpg");
-  background-repeat: no-repeat;
-  background-position: 50% -66px;
-  background-size: auto 462px;
-}
-
-.page-main__wrapper--index {
-  background-color: #000000;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 0 110px, 50% -66px;
-  background-size: auto 286px, auto 462px;
+  background-position: 0 110px, 0 -66px;
+  box-sizing: border-box;
+  padding-top: 25px;
+}
+
+.page-main__wrapper--other {
+  background-color: #000000;
+  background-image: url("../img/bg-back-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: 0 -66px;
+  box-sizing: border-box;
+  padding-top: 30px;
+  padding-bottom: 80px;
 }
 
 .page-main__title {
-  font-size: 24px;
-  font-weight: 300;
-  color: @color;
-  text-align: center;
-  margin: 0;
-  padding: 30px 35px 70px 35px;
-}
-
-.page-main__title--index {
   font-size: 0;
   margin: 0;
 }
 
-@media (min-width: 660px) {
+.page-main__title--photo {
+  font-size: 24px;
+  font-weight: 300;
+  color: @color;
+  text-align: center;
+  width: 170px;
+  margin: 0 auto;
+}
+
+.page-main__title--form {
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 32px;
+  color: @color;
+  text-align: center;
+  width: 230px;
+  margin: 0 auto;
+}
+
+@media (min-width: @tablet-width) {
   .page-main__wrapper {
-    background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: 50% -110px;
-    background-size: auto 729px;
+    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% 74px, 50% -110px;
+    box-sizing: border-box;
+    padding-top: 103px;
   }
 
-  .page-main__wrapper--index {
-    background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
-    background-position: 50% 80px, 50% -110px;
-    background-size: auto 545px, auto 729px;
+  .page-main__wrapper--other {
+    background-image: url("../img/bg-back-tablet@1x.jpg");
+    background-position: 50% -110px;
+    box-sizing: border-box;
+    padding-top: 80px;
+    padding-bottom: 147px;
   }
 
   .page-main__title {
-    font-size: 50px;
-    line-height: 50px;
-    padding: 80px 154px 146px 154px;
-  }
-
-  .page-main__title--index {
-    width: 186px;
-    padding: 0;
-    padding-top: 100px;
-    padding-left: 75px;
     font-size: 40px;
-    line-height: 60px;
+    line-height: 50px;
+    width: 186px;
+    margin-left: 75px;
     color: #ffffff;
     font-weight: 300;
     text-align: center;
   }
-}
 
-@media (min-width: 1200px) {
-  .page-main__wrapper {
-    background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: 0 -110px;
-    background-size: auto 853px;
+  .page-main__title--photo {
+    font-size: 50px;
+    line-height: 50px;
+    width: 350px;
+    margin: 0 auto;
   }
 
-  .page-main__wrapper--index {
+  .page-main__title--form {
+    font-size: 50px;
+    line-height: 60px;
+    width: 475px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-main__wrapper {
     background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
-    background-position: 146px 99px, 0 -110px;
-    background-size: auto 645px, auto 853px;
+    background-position: 146px 209px, center;
+    background-size: auto 645px, cover;
+    margin-top: -110px;
+    min-height: 853px;
+    padding-top: 230px;
+  }
+
+  .page-main__wrapper--other {
+    background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-position: center;
+    background-size: cover;
+    margin-top: -110px;
+    min-height: 853px;
+    padding-top: 180px;
   }
 
   .page-main__title {
-    padding: 70px 420px 100px 420px;
+    width: 231px;
+    margin-left: 160px;
+    font-size: 50px;
   }
 
-  .page-main__title--index {
-    width: 231px;
-    padding-top: 120px;
-    padding-left: 160px;
-    font-size: 50px;
+  .page-main__title--photo {
+    width: 350px;
+    margin: 0 auto;
+  }
+
+  .page-main__title--form {
+    width: 750px;
+    margin: 0 auto;
   }
 }

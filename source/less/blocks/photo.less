@@ -23,7 +23,7 @@
   text-align: center;
 }
 
-@media (min-width: 660px) {
+@media (min-width: @tablet-width) {
   .photo__title {
     font-size: 18px;
     line-height: 30px;
@@ -51,7 +51,11 @@
   }
 }
 
-@media (min-width: 1200px) {
+@media (min-width: @desktop-width) {
+  .photo {
+    margin-top: -459px;
+  }
+
   .photo__title {
     padding: 95px 310px 90px 310px;
   }
