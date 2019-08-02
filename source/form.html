@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Pink</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
@@ -12,7 +13,7 @@
         <img class="page-header__logo-text" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">Открыть меню</button>
+        <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list">
             <li class="main-nav__list-item">
@@ -32,7 +33,9 @@
       </nav>
     </header>
     <main class="page-main container">
-      <h1 class="page-main__title">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      <div class="page-main__wrapper page-main__wrapper--other">
+        <h1 class="page-main__title page-main__title--form">Конкурс на самое безбашенное путешествие с Пинк</h1>
+      </div>
     </main>
     <footer class="page-footer container">
       <div class="page-footer__wrapper">

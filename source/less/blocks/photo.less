@@ -22,3 +22,46 @@
 .photo__item-image {
   text-align: center;
 }
+
+@media (min-width: @tablet-width) {
+  .photo__title {
+    font-size: 18px;
+    line-height: 30px;
+    padding: 95px 100px 75px 100px;
+  }
+
+  .photo__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .photo__item {
+    width: 300px;
+    margin-bottom: 20px;
+  }
+
+  .photo__item-image {
+    margin: 0 20px;
+  }
+
+  .photo__item:first-child {
+    width: auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .photo {
+    margin-top: -459px;
+  }
+
+  .photo__title {
+    padding: 95px 310px 90px 310px;
+  }
+
+  .photo__list {
+    width: 940px;
+    padding: 0 130px;
+  }
+}
