@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header container">
+    <header class="page-header page-header--closed page-header--nojs container">
       <a class="page-header__logo" href="index.html">
         <img src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
       </a>
@@ -62,7 +62,7 @@
       </div>
       <section class="features">
         <h2 class="visually-hidden">Характеристики приложения</h2>
-        <h3 class="features__title">Устали от серости мегаполиса? Нам есть, что вам предложить!</h3>
+        <h3 class="features__title">Устали от серости мегаполиса?<span>Нам есть, что вам предложить!</span></h3>
         <div class="features__wrapper">
           <ul class="features__list">
             <li class="features__item">
@@ -91,8 +91,11 @@
         </div>
       </section>
       <section class="effect">
-        <div class="effect__timer">
+        <!--<div class="effect__timer">
           <img src="img/icon-timer.svg" width="238" height="276" alt="Таймер">
+        </div>-->
+        <div class="effect__timer">
+          <p class="effect__hour">24</p>
         </div>
         <div class="effect__description">
           <b class="effect__description-title">Эффект<br> на 24 часа!</b>
@@ -200,5 +203,19 @@
         </div>
       </div>
     </footer>
+    <script>
+      var pageHeader = document.querySelector('.page-header');
+      var navToggle = document.querySelector('.main-nav__toggle');
+      pageHeader.classList.remove('page-header--nojs');
+      navToggle.addEventListener('click', function() {
+        if (pageHeader.classList.contains('page-header--closed')) {
+          pageHeader.classList.remove('page-header--closed');
+          pageHeader.classList.add('page-header--opened');
+        } else {
+          pageHeader.classList.add('page-header--closed');
+          pageHeader.classList.remove('page-header--opened');
+        }
+      });
+    </script>
   </body>
 </html>

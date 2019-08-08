@@ -6,20 +6,35 @@
   .effect {
     display: flex;
     align-items: center;
-    justify-content: center;
-    margin-top: 58px;
-    margin-bottom: 50px;
+    padding: 59px 30px 50px 20px;
   }
 
   .effect__timer {
+    display: block;
+    margin: 0;
     width: 238px;
     height: 276px;
-    padding-right: 68px;
-    opacity: 0.1;
+    margin-right: 68px;
+    background-image: url("../img/icon-timer.svg");
+    background-size: 238px 276px;
+    background-position: 0 0;
+    backround-repeat: no-repeat;
+  }
+
+  .effect__hour {
+    margin: 0;
+    padding: 75px 45px 60px;
+    display: block;
+    font-size: 96px;
+    line-height: 150px;
+    font-weight: 700;
+    text-align: center;
+    color: #d22856;
   }
 
   .effect__description {
     width: 296px;
+    padding: 40px 0 30px 0;
     text-align: left;
   }
 
@@ -43,13 +58,22 @@
 @media (min-width: @desktop-width) {
   .effect {
     background-color: @bg-color-grey;
-    margin-top: 0;
+    justify-content: center;
+    padding: 65px auto 66px auto;
   }
 
   .effect__timer {
     width: 298px;
     height: 345px;
+    background-size: 298px 345px;
   }
+
+  .effect__hour {
+    padding: 93px 55px 87px;
+    font-size: 120px;
+    line-height: 187px;
+  }
+
 
   .effect__description {
     width: 525px;
