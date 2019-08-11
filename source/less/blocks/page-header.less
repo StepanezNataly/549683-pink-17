@@ -8,8 +8,13 @@
 .page-header__logo {
   width: 75px;
   height: 22px;
-  padding: 22px 0 22px 20px;
+  margin: 22px 20px;
   /*box-shadow: 0 1px rgb(0, 0, 0), inset 0 1px rgba(255, 255, 255, 0.15);*/
+}
+
+.page-header__logo img {
+  width: 75px;
+  height: 22px;
 }
 
 @media (max-width: @mobile-width-only) {
@@ -23,7 +28,12 @@
   .page-header__logo {
     width: 147px;
     height: 40px;
-    padding: 27px 0 43px 20px;
+    margin: 27px 20px 43px 20px;
+  }
+
+  .page-header__logo img {
+    width: 147px;
+    height: auto;
   }
 
   .page-header--closed {
@@ -50,7 +60,13 @@
   }
 
   .page-header__logo {
-    padding-left: 130px;
-    padding-right: 170px;
+    width: 147px;
+    height: 40px;
+    margin: 27px 170px 43px 130px;
+  }
+
+  .page-header__logo img {
+    width: 147px;
+    height: auto;
   }
 }
