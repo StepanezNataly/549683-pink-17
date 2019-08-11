@@ -8,9 +8,13 @@
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header class="page-header container">
+    <header class="page-header page-header--closed container">
       <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-text" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-white-desktop.svg">
+          <source media="(min-width: 660px)" srcset="img/logo-pink-white-tablet.svg">
+          <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" width="75" height="22" alt="Логотип Pink">
+        </picture>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
@@ -41,17 +45,22 @@
         <p class="photo__title">
           Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?
         </p>
-        <div class="photo__wrapper">
-          <section class="photo__list">
+        <section class="photo__list">
+          <div class="photo__list-best">
             <div class="photo__item">
               <div class="photo__item-image photo__item-image--best">
                 <a href="#">
-                  <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Изображение 1 - ПАНОРАМА"></a>
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/panorama-desktop@1x.jpg">
+                    <source media="(min-width: 660px)" srcset="img/panorama-tablet@1x.jpg">
+                    <img src="img/panorama-mobile@1x.jpg" width="320" height="137" alt="Изображение 1 - ПАНОРАМА">
+                  </picture>
+                </a>
+                <div class="photo__item-marker">ПАНОРАМА ДНЯ</div>
               </div>
-              <div class="photo__item-marker">ПАНОРАМА ДНЯ</div>
-              <div class="photo__item-description">
+              <div class="photo__item-description photo__item-description--best">
                 <p class="photo__item-text">
-                  <p><strong>Анна</strong>(5 минут назад)</p>
+                  <p class="photo__item-author">Анна <span>(5 минут назад)</span></p>
                   Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!
                 </p>
                 <p class="photo__item-like">
@@ -60,15 +69,21 @@
                 </p>
               </div>
             </div>
+          </div>
+          <div class="photo__list-main">
             <div class="photo__item">
               <div class="photo__item-image">
                 <a href="#">
-                  <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Изображение 2">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-car-desktop@1x.jpg">
+                    <source media="(min-width: 660px)" srcset="img/photo-car-tablet@1x.jpg">
+                    <img src="img/photo-car-mobile@1x.jpg" width="280" height="180" alt="Изображение 2">
+                  </picture>
                 </a>
               </div>
               <div class="photo__item-description">
                 <p class="photo__item-text">
-                  <p><strong>Левон</strong>(5 часов назад)</p>
+                  <p class="photo__item-author">Левон <span>(5 часов назад)</span></p>
                   Вчера он на луну летал, сегодня в руки к нам попал.
                 </p>
                 <p class="photo__item-like">
@@ -80,12 +95,16 @@
             <div class="photo__item">
               <div class="photo__item-image">
                 <a href="#">
-                  <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Изображение 3">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-drumset-desktop@1x.jpg">
+                    <source media="(min-width: 660px)" srcset="img/photo-drumset-tablet@1x.jpg">
+                    <img src="img/photo-drumset-mobile@1x.jpg" width="280" height="180" alt="Изображение 3">
+                  </picture>
                 </a>
               </div>
               <div class="photo__item-description">
                 <p class="photo__item-text">
-                  <p><strong>Антон</strong>(12 часов назад)</p>
+                  <p class="photo__item-author">Антон <span>(12 часов назад)</span></p>
                   Соседи будут рады!
                 </p>
                 <p class="photo__item-like">
@@ -97,12 +116,16 @@
             <div class="photo__item">
               <div class="photo__item-image">
                 <a href="#">
-                  <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Изображение 4">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-window-desktop@1x.jpg">
+                    <source media="(min-width: 660px)" srcset="img/photo-window-tablet@1x.jpg">
+                    <img src="img/photo-window-mobile@1x.jpg" width="280" height="180" alt="Изображение 4">
+                  </picture>
                 </a>
               </div>
               <div class="photo__item-description">
                 <p class="photo__item-text">
-                  <p><strong>Борис</strong>(20 часов назад)</p>
+                  <p class="photo__item-author">Борис <span>(20 часов назад)</span></p>
                   Здесь могла быть ваша цитата о высоком и вечном.
                 </p>
                 <p class="photo__item-like">
@@ -114,12 +137,16 @@
             <div class="photo__item">
               <div class="photo__item-image">
                 <a href="#">
-                  <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Изображение 5">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-fair-desktop@1x.jpg">
+                    <source media="(min-width: 660px)" srcset="img/photo-fair-tablet@1x.jpg">
+                    <img src="img/photo-fair-mobile@1x.jpg" width="280" height="180" alt="Изображение 5">
+                  </picture>
                 </a>
               </div>
               <div class="photo__item-description">
                 <p class="photo__item-text">
-                  <p><strong>Сергей</strong>(25 часов назад)</p>
+                  <p class="photo__item-author">Сергей <span>(25 часов назад)</span></p>
                   Самая кубанская в мире!
                 </p>
                 <p class="photo__item-like">
@@ -131,12 +158,16 @@
             <div class="photo__item">
               <div class="photo__item-image">
                 <a href="#">
-                  <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Изображение 6">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-pov-desktop@1x.jpg">
+                    <source media="(min-width: 660px)" srcset="img/photo-pov-tablet@1x.jpg">
+                    <img src="img/photo-pov-mobile@1x.jpg" width="280" height="180" alt="Изображение 6">
+                  </picture>
                 </a>
               </div>
               <div class="photo__item-description">
                 <p class="photo__item-text">
-                  <p><strong>Максим</strong>(40 часов назад)</p>
+                  <p class="photo__item-author">Максим <span>(40 часов назад)</span></p>
                   Где снег-то?
                 </p>
                 <p class="photo__item-like">
@@ -148,12 +179,16 @@
             <div class="photo__item">
               <div class="photo__item-image">
                 <a href="#">
-                  <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Изображение 7">
+                  <picture>
+                    <source media="(min-width: 1200px)" srcset="img/photo-wing-desktop@1x.jpg">
+                    <source media="(min-width: 660px)" srcset="img/photo-wing-tablet@1x.jpg">
+                    <img src="img/photo-wing-mobile@1x.jpg" width="280" height="180" alt="Изображение 7">
+                  </picture>
                 </a>
               </div>
               <div class="photo__item-description">
                 <p class="photo__item-text">
-                  <p><strong>Надежда</strong>(45 часов назад)</p>
+                  <p class="photo__item-author">Надежда <span>(45 часов назад)</span></p>
                   Всем GM и взаимные лайки!
                 </p>
                 <p class="photo__item-like">
@@ -162,13 +197,14 @@
                 </p>
               </div>
             </div>
-          </section>
-        </div>
+          </div>
+        </section>
       </section>
     </main>
     <footer class="page-footer container">
       <div class="page-footer__wrapper">
         <a class="page-footer__logo" href="index.html">
+          <source media="(min-width: 1200px)" srcset="img/logo-pink-blue-desktop.svg">
           <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg" width="147" height="40" alt="Логотип Pink">
         </a>
         <div class="page-footer__social social">

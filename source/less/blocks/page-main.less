@@ -2,8 +2,10 @@
   background-color: #000000;
   background-image: url("../img/iphone-hand-mobile@1x.png"), url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
-  background-position: 0 110px, 0 -66px;
+  background-position: 0 176px, 50% 0;
+  background-size: auto 286px, auto 462px;
   box-sizing: border-box;
+  margin-top: -66px;
   padding-top: 25px;
 }
 
@@ -11,9 +13,11 @@
   background-color: #000000;
   background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 0 -66px;
+  background-position: 50% 0;
+  background-size: auto 462px;
   box-sizing: border-box;
-  padding-top: 30px;
+  padding-top: 101px;
+  margin-top: -66px;
   padding-bottom: 80px;
 }
 
@@ -44,16 +48,21 @@
 @media (min-width: @tablet-width) {
   .page-main__wrapper {
     background-image: url("../img/iphone-hand-tablet@1x.png"), url("../img/bg-back-tablet@1x.jpg");
-    background-position: 50% 74px, 50% -110px;
+    background-position: 0 184px, 50% 0;
+    background-size: auto 545px, auto 729px;
     box-sizing: border-box;
-    padding-top: 103px;
+    margin-top: -110px;
+    padding-top: 203px;
+    width: 100%;
   }
 
   .page-main__wrapper--other {
     background-image: url("../img/bg-back-tablet@1x.jpg");
-    background-position: 50% -110px;
+    background-position: 50% 0;
+    background-size: auto 729px;
     box-sizing: border-box;
-    padding-top: 80px;
+    margin-top: -110px;
+    padding-top: 191px;
     padding-bottom: 147px;
   }
 
@@ -86,18 +95,18 @@
   .page-main__wrapper {
     background-image: url("../img/iphone-hand-desktop@1x.png"), url("../img/bg-back-desktop@1x.jpg");
     background-position: 146px 209px, center;
-    background-size: auto 645px, cover;
+    background-size: auto 645px, auto 853px;
+    box-sizing: border-box;
     margin-top: -110px;
-    min-height: 853px;
     padding-top: 230px;
   }
 
   .page-main__wrapper--other {
     background-image: url("../img/bg-back-desktop@1x.jpg");
-    background-position: center;
-    background-size: cover;
+    background-position: 50% 0;
+    background-size: auto 853px;
+    box-sizing: border-box;
     margin-top: -110px;
-    min-height: 853px;
     padding-top: 180px;
   }
 
@@ -105,6 +114,7 @@
     width: 231px;
     margin-left: 160px;
     font-size: 50px;
+    line-height: 60px;
   }
 
   .page-main__title--photo {

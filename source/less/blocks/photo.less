@@ -3,24 +3,101 @@
 }
 
 .photo__title {
+  margin: 0;
   font-size: @base-size;
   font-weight: 400;
   text-align: center;
   padding: 50px 35px;
 }
 
-.photo__list {
+.photo__list-best {
   margin: 0;
+  width: 280px;
 }
 
-.photo__item-description {
-  margin: 0 20px;
-  padding: 18px 15px;
-  background-color: @bg-color-grey;
+.photo__item {
+  width: 280px;
+  margin: 0 20px 20px;
 }
 
 .photo__item-image {
+  width: 280px;
+  height: 180px;
   text-align: center;
+}
+
+.photo__item-image img {
+  width: 280px;
+  height: 180px;
+}
+
+.photo__item-image--best {
+  position: relative;
+  width: 320px;
+  height: 137px;
+}
+
+.photo__item-image--best img {
+  width: 320px;
+  height: 137px;
+}
+
+.photo__item-marker {
+  position: absolute;
+  top: 0;
+  display: inline-block;
+  width: 140px;
+  height: 24px;
+  background-color: #d22856;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #ffffff;
+  text-align: center;
+  padding: 7px 0;
+}
+
+.photo__item-description {
+  padding: 20px 15px 25px;
+  background-color: @bg-color-grey;
+}
+
+.photo__item-text {
+  margin: 0;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.photo__item-author {
+  margin: 0;
+  font-weight: 700;
+}
+
+.photo__item-author span {
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.photo__item-like {
+  margin: 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: #d22856;
+  text-transform: uppercase;
+}
+
+.photo__item-like img {
+  margin-right: 15px;
+}
+
+.photo__list-best .photo__item {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.photo__item-description--best {
+  width: 250px;
+  margin-left: 20px;
 }
 
 @media (min-width: @tablet-width) {
@@ -32,36 +109,142 @@
 
   .photo__list {
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
+    /*justify-content: space-between;*/
+    width: 660px;
   }
 
-  .photo__item {
+  .photo__list-main {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 660px;
+    margin: 0;
+  }
+
+  .photo__list-main .photo__item {
     width: 300px;
-    margin-bottom: 20px;
+    margin: 0 0 20px 20px;
+  }
+
+  .photo__item-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 125px;
+    padding: 28px 25px;
+  }
+
+  .photo__item-like {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+  }
+
+  .photo__item-marker {
+    top: 57px;
+    right: 20px;
   }
 
   .photo__item-image {
-    margin: 0 20px;
+    width: 300px;
+    height: 300px;
   }
 
-  .photo__item:first-child {
-    width: auto;
+  .photo__item-image img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .photo__item-like img {
+    order: 2;
+    margin-left: 15px;
+  }
+
+  .photo__list-best {
+    width: 660px;
+  }
+
+  .photo__item-image--best {
+    width: 660px;
+    height: 509px;
+  }
+
+  .photo__item-image--best img {
+    width: 660px;
+    height: 509px;
+  }
+
+  .photo__list-best .photo__item-description--best {
+    position: relative;
+    margin: 0 20px;
     margin-bottom: 50px;
+    width: 570px;
+    height: 70px;
+  }
+
+  .photo__item-description--best .photo__item-like {
+    position: absolute;
+    top: 28px;
+    right: 9px;
   }
 }
 
 @media (min-width: @desktop-width) {
-  .photo {
-    margin-top: -459px;
-  }
-
   .photo__title {
     padding: 95px 310px 90px 310px;
   }
 
   .photo__list {
+    width: 1200px;
+    margin: 0;
+  }
+
+  .photo__list-main {
     width: 940px;
     padding: 0 130px;
+  }
+
+  .photo__list-main .photo__item {
+    width: 300px;
+    margin: 0 20px 54px 0;
+  }
+
+  .photo__item-image {
+    height: 400px;
+  }
+
+  .photo__item-image img {
+    height: 400px;
+  }
+
+  .photo__list-main .photo__item:nth-child(3n) {
+    margin-right: 0;
+  }
+
+  .photo__list-best {
+    width: 1200px;
+  }
+
+  .photo__item-image--best {
+    width: 1200px;
+    height: 506px;
+  }
+
+  .photo__item-image--best img {
+    width: 1200px;
+    height: 506px;
+  }
+
+  .photo__item-marker {
+    top: 54px;
+    right: 130px;
+  }
+
+  .photo__list-best .photo__item-description--best {
+    width: 900px;
+    margin: 0 130px;
+    margin-bottom: 50px;
   }
 }
