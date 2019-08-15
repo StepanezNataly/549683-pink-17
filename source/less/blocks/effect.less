@@ -10,26 +10,36 @@
   }
 
   .effect__timer {
-    display: block;
+    display: flex;
     margin: 0;
     width: 238px;
     height: 276px;
     margin-right: 68px;
     background-image: url("../img/icon-timer.svg");
-    background-size: 238px 276px;
-    background-position: 0 0;
-    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .effect__hour {
-    margin: 0;
-    padding: 75px 45px 60px;
-    display: block;
+    position: relative;
+    margin: auto;
+    padding: 75px 0;
     font-size: 96px;
     line-height: 150px;
     font-weight: 700;
     text-align: center;
     color: #d22856;
+  }
+
+  .effect__hour::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 176px;
+    height: 176px;
+    border: 15px solid #d22856;
+    border-radius: 50%;
+    top: 54px;
+    left: -48px;
   }
 
   .effect__description {
@@ -65,15 +75,26 @@
   .effect__timer {
     width: 298px;
     height: 345px;
-    background-size: 298px 345px;
   }
 
   .effect__hour {
-    padding: 93px 55px 87px;
+    padding: 90px 0;
+    position: relative;
     font-size: 120px;
     line-height: 187px;
   }
 
+  .effect__hour::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 220px;
+    height: 220px;
+    border: 16px solid #d22856;
+    border-radius: 50%;
+    top: 70px;
+    left: -58px;
+  }
 
   .effect__description {
     width: 525px;

@@ -4,7 +4,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Pink</title>
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700&display=swap&subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -85,19 +84,19 @@
           <div class="features__image">
             <div class="features__image-mobile">
               <picture>
-                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png">
-                <img src="img/iphone-screen-mobile@1x.png" width="157" height="320" alt="Изображение приложения на iPhone">
+                <source media="(min-width: 660px)" srcset="img/iphone-screen-3-tablet@1x.png 1x, img/iphone-screen-3-tablet@2x.png 2x">
+                <img src="img/iphone-screen-mobile@1x.png" srcset="img/iphone-screen-mobile@2x.png 2x" width="157" height="320" alt="Изображение приложения на iPhone">
               </picture>
             </div>
             <div class="features__image-desktop">
               <picture>
-                <img class="features__image-1" src="img/iphone-screen-1-desktop@1x.png" width="186" height="382" alt="Изображение приложения на iPhone-1">
+                <img class="features__image-1" src="img/iphone-screen-1-desktop@1x.png" srcset="img/iphone-screen-1-desktop@2x.png 2x" width="186" height="382" alt="Изображение приложения на iPhone-1">
               </picture>
               <picture>
-                <img class="features__image-2" src="img/iphone-screen-2-desktop@1x.png" width="186" height="382" alt="Изображение приложения на iPhone-2">
+                <img class="features__image-2" src="img/iphone-screen-2-desktop@1x.png" srcset="img/iphone-screen-2-desktop@2x.png 2x" width="186" height="382" alt="Изображение приложения на iPhone-2">
               </picture>
               <picture>
-                <img class="features__image-3" src="img/iphone-screen-3-desktop@1x.png" width="186" height="382" alt="Изображение приложения на iPhone-3">
+                <img class="features__image-3" src="img/iphone-screen-3-desktop@1x.png" srcset="img/iphone-screen-3-desktop@2x.png 2x" width="186" height="382" alt="Изображение приложения на iPhone-3">
               </picture>
             </div>
           </div>
@@ -189,7 +188,11 @@
         </div>
       </section>
       <section class="page-footer__map map">
-        <img src="img/bg-map-mobile@1x.png" alt="Наше местоположение">
+        <picture>
+          <source media="(min-width: 1200px)" srcset="img/bg-map-desktop@1x.jpg 1x, img/bg-map-desktop@2x.jpg 2x">
+          <source media="(min-width: 660px)" srcset="img/bg-map-tablet@1x.jpg 1x, bg-map-tablet@2x.jpg 2x">
+          <img src="img/bg-map-mobile@1x.png" srcset="img/bg-map-mobile@2x.jpg 2x" width="320" height="645" alt="Наше местоположение">
+        </picture>
       </section>
       <div class="page-footer__wrapper page-footer__wrapper--index">
         <a class="page-footer__logo" href="index.html">
