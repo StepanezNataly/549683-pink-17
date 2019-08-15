@@ -26,14 +26,15 @@
 .features__wrapper::before {
   content: "";
   position: absolute;
+  width: 0;
+  height: 0;
+  z-index: 1;
+  border: 0 solid transparent;
+  border-left-width: 0;
+  border-right-width: 320px;
+  border-top: 20px solid #ffffff;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 94px;
-  background-image: url("../img/bg-triangle-white.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-  opacity: 0.05;
 }
 
 .features__list {
@@ -100,6 +101,11 @@
     justify-content: center;
   }
 
+  .features__wrapper::before {
+    border-right-width: 660px;
+    border-top: 50px solid #ffffff;
+  }
+
   .features__list {
     order: 2;
     width: 307px;
@@ -126,7 +132,7 @@
     line-height: 60px;
     width: auto;
     text-align: center;
-    padiing-top: 75px;
+    padding-top: 75px;
     padding-bottom: 75px;
   }
 
@@ -142,13 +148,17 @@
     align-items: center;
   }
 
+  .features__wrapper::before {
+    border-right-width: 1200px;
+    border-top: 100px solid #ffffff;
+  }
+
   .features__list {
     display: flex;
-    justify-content: flex-start;
-    flex-direction: row;
+    justify-content: space-between;
     text-align: center;
-    width: 900px;
-    padding: 0;
+    width: 860px;
+    padding: 0 20px;
     margin-top: 50px;
   }
 
@@ -163,16 +173,12 @@
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
-    padding-right: 90px;
-  }
-
-  .features__item:nth-child(3n) {
-    padding-right: 0;
+    margin-left: 5px;
   }
 
   .features__image {
-    width: 830px;
-    height: 382px;
+    width: 900px;
+    height: auto;
   }
 
   .features__image-mobile img {
@@ -181,20 +187,13 @@
 
   .features__image-desktop {
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    width: 830px;
-    height: 382px;
+    justify-content: space-between;
+    width: 900px;
+    margin-left: 12px;
   }
 
   .features__image-desktop img {
-    width: 186px;
-    height: 382px;
-    margin-right: 136px;
-  }
-
-  .features__image-desktop .features__image-3 {
-    margin-right: 0;
+    width: 100%;
+    display: block;
   }
 }
