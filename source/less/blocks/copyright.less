@@ -1,17 +1,30 @@
-@media (min-width: @tablet-width) {
-  .copyright {
-    display: flex;
-  }
+.copyright {
+  display: flex;
+  align-items: center;
+}
 
-  .copyright__text {
-    font-weight: 400;
-    line-height: 18px;
-    padding-right: 13px;
-  }
+.copyright__text {
+  font-weight: 400;
+  line-height: 18px;
+  padding-right: 13px;
+}
 
-  .copyright__link {
-    width: 27px;
-    height: 34px;
+.copyright__link {
+  width: 27px;
+  height: 34px;
+
+  &:focus {
+    opacity: 0.3;
+  }
+}
+
+.copyright__link svg {
+  fill: #d22856;
+  width: 27px;
+  height: 34px;
+
+  &:hover {
+    fill: #000000;
   }
 }
 

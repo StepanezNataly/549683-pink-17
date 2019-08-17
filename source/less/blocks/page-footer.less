@@ -14,11 +14,23 @@
   width: 147px;
   height: 40px;
   margin-bottom: 40px;
+
+  &:hover g {
+    fill: #d22856;
+  }
+
+  &:focus g {
+    opacity: 0.3;
+  }
 }
 
-.page-footer__logo img {
+.page-footer__logo svg {
   width: 147px;
   height: 40px;
+}
+
+.page-footer__logo .page-footer__logo-desktop {
+  display: none;
 }
 
 .page-footer__map {
@@ -51,5 +63,13 @@
   .page-footer__wrapper {
     width: auto;
     padding: 70px 130px 73px;
+  }
+
+  .page-footer__logo .page-footer__logo-image {
+    display: none;
+  }
+
+  .page-footer__logo .page-footer__logo-desktop {
+    display: inline-block;
   }
 }
