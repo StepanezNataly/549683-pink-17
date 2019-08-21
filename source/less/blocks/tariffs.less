@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: center;
 }
 
 .tariffs__caption {
@@ -14,13 +15,6 @@
 }
 
 .tariffs__caption-info {
-  width: 18px;
-  height: 94px;
-  border: solid 2px #283645;
-  background-color: @bg-dark;
-}
-
-.tariffs__caption-info:nth-child(2) {
   height: 94px;
   width: 272px;
   background-color: @bg-dark;
@@ -29,9 +23,14 @@
   line-height: 30px;
   color: @color;
   border: solid 2px #283645;
-  border-left: solid 2px #e5e5e5;
-  border-right: solid 2px #e5e5e5;
   text-align: center;
+}
+
+.tariffs__caption-info--vacant {
+  background-color: transparent;
+  border: none;
+  border-left: none;
+  border-right: none;
 }
 
 .tariffs__caption .tariffs__caption-price {
@@ -39,8 +38,76 @@
   font-weight: 300;
 }
 
+.tariffs__function {
+  display: flex;
+}
+
 .tariffs__function-info {
+  display: flex;
+  align-items: center;
+  /*justify-content: flex-end;*/
+  font-size: 18px;
   line-height: 30px;
   font-weight: 400;
   border: solid 2px #e5e5e5;
+  text-align: center;
+  padding: 0 20px;
+  width: 236px;
+  height: 59px;
+}
+
+/*.tariffs__function-info:nth-child(2n+1) {
+  justify-content: space-between;
+}*/
+
+@media (min-width: @tablet-width) {
+  .tariffs__caption-info {
+    height: 75px;
+    width: 153px;
+    font-size: 16px;
+  }
+
+  .tariffs__caption .tariffs__caption-price {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 300;
+    margin: 0;
+  }
+
+  .tariffs__function-info {
+    font-size: 14px;
+    line-height: 30px;
+    padding: 0;
+    width: 153px;
+    height: 45px;
+  }
+
+  .tariffs__function-icon {
+    margin: auto;
+  }
+
+  .tariffs__function-value {
+    padding-left: 12px;
+  }
+
+  .tariffs__function .tariffs__function-info:nth-child(3) {
+    font-size: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .tariffs__caption-info {
+    height: 94px;
+    width: 233px;
+    font-size: 18px;
+  }
+
+  .tariffs__function-info {
+    width: 233px;
+    height: 59px;
+  }
+
+  .tariffs__function-value {
+    padding-left: 20px;
+  }
 }
